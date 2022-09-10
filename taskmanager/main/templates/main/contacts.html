@@ -1,0 +1,21 @@
+{% extends  'main/base.html' %}
+
+{% block title %}
+Contacts
+{% endblock %}
+
+{% block content %}
+    <h1>Contacts page</h1>
+    {% if contacts %}
+        {% for el in contacts %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ el.name }}</h3>
+                <p>{{ el.position }}</p>
+                <p>{{ el.phone }}</p>
+                <p>{{ el.email }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>don't have workers yet</p>
+    {% endif %}
+{% endblock %}
