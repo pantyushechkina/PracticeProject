@@ -13,6 +13,11 @@ def contacts(request):
 
 def catalog(request):
     items = Item.objects.all()
+    CATID = request.GET.get('categories')
+    if CATID:
+        items = Item.objects.filter(idType = CATID)
+    else:
+        items = Item.objects.all()
     categories = TypeProduct.objects.all()
     return  render(request, 'main/catalog.html', {'categories': categories, 'items': items})
 

@@ -14,10 +14,10 @@ Catalog
             </a>
             <hr>
         {% if categories %}
-            <ul class="nav nav-pills flex-column mb-auto">
+            <ul class="nav nav-pills flex-column mb-auto" id="sidenav_catalog">
             {% for el in categories %}
                 <li class="nav-item">
-                    <a href="#" class="nav-link link-dark" id="passive" type="button" >
+                    <a href="/catalog/?categories={{el.idType}}" class="button_nav" id="{{ el.idType }}" type="button">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
                         {{ el.typeName }} id: {{ el.idType }}
                     </a>
@@ -39,4 +39,5 @@ Catalog
         {% endif %}
 
     </div>
+    </script>
 {% endblock %}
