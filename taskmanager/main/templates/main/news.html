@@ -1,0 +1,133 @@
+{% extends  'main/base.html' %}
+{% load static %}
+{% block title %}
+Contacts
+{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="{% static 'main/css/news_style.css'%}">
+{% endblock %}
+
+{% block content %}
+<body>
+    <section class="news">
+        <div class="container">
+        <div class="news__inner">
+        <div class="news__slider">
+            <div class="news__slider-inner">
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  В Рамках Выездного Семинара Гомельской Областной Ветеранской Организации, Ветераны Труда Со Всей Области Посетили Добрушскую Бумажную Фабрику «Герой Труда».
+                </div>
+                <div class="news__slider-text">
+                  «В рамках выездного семинара Гомельской областной ветеранской организации, ветераны труда со всей области посетили Добрушскую бумажную фабрику «Герой труда».Был заслушан доклад о работе совета ветеранов бумажной фабрики по решению вопросов социальной защиты пожилых людей и патриотическому воспитанию молодежи. А также подведены итоги работы за истекший период этого года.– Отрадно, что на предприятии уделяется внимание патриотическому…»
+                </div>
+                <div class="news__slider-author">
+                  GEROYTRUDA
+                </div>
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Перспективные Специалисты Гомельской Области, Способные В Будущем Занять Посты Руководителей, Посетили Добрушскую Бумажную Фабрику «Герой Труда».
+                </div>
+                <div class="news__slider-text">
+                  «Перспективные специалисты Гомельской области, способные в будущем занять посты руководителей, посетили Добрушскую бумажную фабрику «Герой труда».Более 20-ти претендентов на лидерские должности узнали о выпускаемой продукции предприятия, также им рассказали об уникальной истории производства и перспективах дальнейшего развития.– Мы здесь впервые, – признались резервисты. – Особенно впечатлила новая картоноделательная машина, которую видели лишь в новостных выпусках…»
+                </div>
+                <div class="news__slider-author">
+                  GEROYTRUDA
+                </div>
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Министра Экономики Заместитель Министра Экономики Дмитрий Ярошевич В Ходе Рабочей Поездки Посетил Филиал «Добрушская Бумажная Фабрика «Герой Труда» ОАО «Управляющая Компания Холдинга «Белорусские Обои».
+                </div>
+                <div class="news__slider-text">
+                  «Сегодня заместитель министра экономики Дмитрий Ярошевич в ходе рабочей поездки посетил филиал «Добрушская бумажная фабрика «Герой труда» ОАО «Управляющая компания холдинга «Белорусские обои».Замминистра посетил новое производство трехслойного мелованного и немелованного картона, отметив уникальность и востребованность изготавливаемой здесь продукции. А также встретился с руководством и трудовым активом филиала и принял участие в обсуждении волнующих коллектив вопросов….»
+                </div>
+                <div class="news__slider-author">
+                  GEROYTRUDA
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="side_news_section"> -->
+            <a href="news_page_2.html" class="news__blog">
+                <div class="news__images" >
+                    <img src="{% static 'main/img/news_page/news_1.jpg' %}" alt="">
+                    <div class="news__date">27.06</div>
+                </div>
+                <div class="info_new">
+                    <div class="news__blog-title">
+                        Новость предприятия
+                    </div>
+                    <div class="news__blog-text">
+                        Команда Добрушской бумажной фабрики «Герой труда» заняла II место в районной спартакиадеСоревновались работники предприятий и организаций Добруша в 6 видах спорта...»
+                    </div>
+                </div>
+            </a>
+            <a href="news_page_3.html" class="news__blog">
+                <div class="news__images">
+                    <img src="{% static 'main/img/news_page/news_2.1.jpg' %}" alt="">
+                    <div class="news__date">24.06</div>
+                </div>
+                <div class="info_new">
+                    <div class="news__blog-title">
+                        Новость предприятия
+                    </div>
+                    <div class="news__blog-text">
+                        Представители российских издательств и типографий посетили Добрушскую бумажную фабрику «Герой труда»....»
+                    </div>
+                </div>
+            </a>
+          <!-- </div> -->
+          </div>
+            <div class="main_news">
+                <div class="news_item">
+                    <div class="content_item_img">
+                        <img src="{% static 'main/img/news_page/news_1_foto_1.jpg' %}" alt="">
+                    </div>
+                    <div class="content_item_info">
+                        <div class="news__blog-title">
+                            ДЕНЬ ПАМЯТИ И СКОРБИ
+                        </div>
+                        <div class="news__blog-text">
+                            22 июня – День памяти и скорби. Чтим память тех, кто защищал в суровые годы родное предприятие
+                            Этот день напоминает о всех погибших в Великой Отечественной войне, замученных в фашистской неволе, умерших в тылу от голода и лишений.
+                        </div>
+
+                        <div class="news_butn">
+                            <a href="{% url 'news_1' %}">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_item">
+                    <div class="content_item_img">
+                        <img src="{% static 'main/img/news_page/news_2_3.jpg' %}" alt="">
+                    </div>
+                    <div class="content_item_info">
+                        <div class="news__blog-title">
+                            РАЙОННАЯ СПАРТАКИАДА СРЕДИ ПРЕДПРИЯТИЙ И ОРГАНИЗАЦИЙ ГОРОДА ДОБРУШ
+                        </div>
+                        <div class="news__blog-text">
+                            Команда Добрушской бумажной фабрики «Герой труда» заняла II место в районной спартакиаде
+Соревновались работники предприятий и организаций Добруша в 6 видах спорта – волейбол, шашки, дартс, настольный теннис, стрельба из пневматической винтовки, гиревой спорт.
+                        </div>
+                        <div class="news_butn">
+                            <a href="news_page_2.html">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'main/js/catalog.js'%}"></script>
+  <script src="{% static 'main/js/slick.min.js'%}"></script>
+  <script src="{% static 'main/js/jquery.formstyler.min.js'%}"></script>
+  <script src="{% static 'main/js/main.js'%}"></script>
+</html>
+
+{% endblock %}

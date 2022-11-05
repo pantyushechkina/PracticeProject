@@ -1,10 +1,260 @@
 {% extends  'main/base.html' %}
-
+{% load static %}
 {% block title %}
 Main page
 {% endblock %}
 
 {% block content %}
-    <h1>Main page</h1>
+
+  <section class="slider" style="background-image: url('static/main/img/main_page/fabrika__.jpg');     min-height: 400px;">
+    <div class="container">
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              КАЧЕСТВЕННАЯ ПРОДУКЦИЯ
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              ШИРОКИЙ АССОРТИМЕНТ
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              СОВРЕМЕННОЕ ПРОИЗВОДСТВО
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services">
+    <div class="container">
+      <div class="services__top">
+        <div class="services__title-box">
+          <div class="services__title">
+            Мы в соц. сетях
+          </div>
+          <div class="services__text">
+            Больше о нас и нашей продукции вы найдете в наших социяльных сетях.
+          </div>
+        </div>
+        <div class="services__btn">
+          <a href="https://www.facebook.com/%D0%9E%D0%90%D0%9E-%D0%94%D0%BE%D0%B1%D1%80%D1%83%D1%88%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D1%83%D0%BC%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F-%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0-%D0%93%D0%B5%D1%80%D0%BE%D0%B9-%D1%82%D1%80%D1%83%D0%B4%D0%B0-426474907535470/?ref=bookmarks" style="border: none;">
+            <i class="fa-brands fa-facebook fa-3x" id="facebook_icon"></i>
+          </a>
+          <a href="https://twitter.com/DBFgeroytruda" style="border: none;">
+            <i class="fa-brands fa-twitter fa-3x" id="twitter_icon"></i>
+          </a>
+          <a href="https://ok.ru/group/57405106815030" style="border: none;">
+            <i class="fa-brands fa-odnoklassniki-square fa-3x" id="odnokl_icon"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="services__items">
+        <div class="services__item">
+          <i class="fa-regular fa-paste fa-5x" id="icon_1"></i>
+          <!-- <i class="fa-solid fa-book-open "></i> -->
+          <!-- <i class="fa-duotone fa-notebook fa-sm"></i> -->
+          <!-- <img src="img/" alt=""> -->
+          <div class="services__item-title">
+            Наша продукция
+          </div>
+          <div class="services__item-text">
+            Современное производство, оснащенное всем необходимым для выпуска широкого ассортимента высококачественной продукции
+          </div>
+          <div class="services__item-btn">
+            <!-- <a class="services__item-link" href="#">Подробнее</a> -->
+            <a href="{% url 'catalog' %}" class="default-btn">
+              Читать далее
+            </a>
+          </div>
+        </div>
+        <div class="services__item">
+          <i class="fa-solid fa-shop fa-5x" id="icon_1"></i>
+          <div class="services__item-title">
+            Где купить?
+          </div>
+          <div class="services__item-text">
+            Продукцию нашего производства можно приобрести непосредственно как у производителя, так и у организаций оптовой торговли.
+          </div>
+          <div class="services__item-btn">
+            <!-- <a class="services__item-link" href="#">Подробнее</a> -->
+            <a href="{% url 'gde_kupit' %}" class="default-btn">
+              Читать далее
+            </a>
+          </div>
+        </div>
+        <div class="services__item">
+          <i class="fa-solid fa-envelope fa-5x" id="icon_1"></i>
+          <div class="services__item-title">
+            Обратная связь
+          </div>
+          <div class="services__item-text">
+            Возник вопрос - напишите! Мы с радостью ответим на все имеющиеся вопросы. При необходимости наши специалисты свяжутся с Вами.
+          </div>
+          <div class="services__item-btn">
+            <!-- <a class="services__item-link" href="#">Подробнее</a> -->
+            <a href="{% url 'obr_sv' %}" class="default-btn">
+              Читать далее
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" style="background-image: url('static/main/img/main_page/fabrika_2.jpg');">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__title">
+          О предприятии
+        </div>
+        <div class="about__text">
+          Наши покупатели отмечают высокое качество изделий и постоянное стремление гибко и максимально быстро выполнять заказы и пожелания партнёров.
+          Многолетний опыт, передаваемый из поколения в поколение, соединение традиций с достижениями современной техники и новыми технологиями делают филиал «Добрушская бумажная фабрика «Герой труда» ОАО «Белорусские обои» надежным партнером в сотрудничестве.
+        </div>
+        <a href="{% url 'about' %}" class="about__btn default-btn">
+          Узнать больше
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="news__top">
+        <div class="news__title-box">
+          <div class="news__title">
+            Новости предприятия
+          </div>
+          <div class="news__text">
+            Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных
+            инстанциях.
+          </div>
+        </div>
+        <div class="news__btn">
+          <a href="{% url 'news' %}">
+            Открыть все новости
+          </a>
+        </div>
+      </div>
+      <div class="news__inner">
+        <div class="news__slider">
+          <div class="news__slider-inner">
+            <div class="news__slider-item">
+              <div class="news__slider-title">
+                В Рамках Выездного Семинара Гомельской Областной Ветеранской Организации, Ветераны Труда Со Всей Области Посетили Добрушскую Бумажную Фабрику «Герой Труда».
+              </div>
+              <div class="news__slider-text">
+                «В рамках выездного семинара Гомельской областной ветеранской организации, ветераны труда со всей области посетили Добрушскую бумажную фабрику «Герой труда».Был заслушан доклад о работе совета ветеранов бумажной фабрики по решению вопросов социальной защиты пожилых людей и патриотическому воспитанию молодежи. А также подведены итоги работы за истекший период этого года.– Отрадно, что на предприятии уделяется внимание патриотическому…»
+              </div>
+              <div class="news__slider-author">
+                GEROYTRUDA
+              </div>
+            </div>
+            <div class="news__slider-item">
+              <div class="news__slider-title">
+                Перспективные Специалисты Гомельской Области, Способные В Будущем Занять Посты Руководителей, Посетили Добрушскую Бумажную Фабрику «Герой Труда».
+              </div>
+              <div class="news__slider-text">
+                «Перспективные специалисты Гомельской области, способные в будущем занять посты руководителей, посетили Добрушскую бумажную фабрику «Герой труда».Более 20-ти претендентов на лидерские должности узнали о выпускаемой продукции предприятия, также им рассказали об уникальной истории производства и перспективах дальнейшего развития.– Мы здесь впервые, – признались резервисты. – Особенно впечатлила новая картоноделательная машина, которую видели лишь в новостных выпусках…»
+              </div>
+              <div class="news__slider-author">
+                GEROYTRUDA
+              </div>
+            </div>
+            <div class="news__slider-item">
+              <div class="news__slider-title">
+                Министра Экономики Заместитель Министра Экономики Дмитрий Ярошевич В Ходе Рабочей Поездки Посетил Филиал «Добрушская Бумажная Фабрика «Герой Труда» ОАО «Управляющая Компания Холдинга «Белорусские Обои».
+              </div>
+              <div class="news__slider-text">
+                «Сегодня заместитель министра экономики Дмитрий Ярошевич в ходе рабочей поездки посетил филиал «Добрушская бумажная фабрика «Герой труда» ОАО «Управляющая компания холдинга «Белорусские обои».Замминистра посетил новое производство трехслойного мелованного и немелованного картона, отметив уникальность и востребованность изготавливаемой здесь продукции. А также встретился с руководством и трудовым активом филиала и принял участие в обсуждении волнующих коллектив вопросов….»
+              </div>
+              <div class="news__slider-author">
+                GEROYTRUDA
+              </div>
+            </div>
+          </div>
+        </div>
+<a href="news_page_2.html" class="news__blog">
+                <div class="news__images" >
+                    <img src="{% static 'main/img/news_page/news_1.jpg' %}" alt="">
+                    <div class="news__date">27.06</div>
+                </div>
+                <div class="info_new">
+                    <div class="news__blog-title">
+                        Новость предприятия
+                    </div>
+                    <div class="news__blog-text">
+                        Команда Добрушской бумажной фабрики «Герой труда» заняла II место в районной спартакиадеСоревновались работники предприятий и организаций Добруша в 6 видах спорта...»
+                    </div>
+                </div>
+            </a>
+            <a href="news_page_3.html" class="news__blog">
+                <div class="news__images">
+                    <img src="{% static 'main/img/news_page/news_2.1.jpg' %}" alt="">
+                    <div class="news__date">24.06</div>
+                </div>
+                <div class="info_new">
+                    <div class="news__blog-title">
+                        Новость предприятия
+                    </div>
+                    <div class="news__blog-text">
+                        Представители российских издательств и типографий посетили Добрушскую бумажную фабрику «Герой труда»....»
+                    </div>
+                </div>
+            </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <div class="footer__text">
+              Чтобы получить более детальную информацию о наших услугах, по вопросам трудоустройства, а также высказать свои замечания и пожелания, заполните электронное обращение.
+            </div>
+            <a href="obr_svyaz.html" class="default-btn">
+              Электронное обращение
+            </a>
+            <ul class="footer__list">
+              <li><a class="footer__phone" href="tel:380963092145"> (+375 2333) 7-70-27</a></li>
+              <li><a class="footer__adress" href="#">г. Добруш, 247052, пр. Луначарского, 7</a></li>
+            </ul>
+          </div>
+          <div class="footer__map">
+            <iframe height="250px" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d311513.0158402708!2d30.90046353242194!3d52.41219582773729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LHRg9C80LDQttC90LDRjyDRhNCw0LHRgNC40LrQsCDQtNC-0LHRgNGD0Yg!5e0!3m2!1sru!2sby!4v1656769876935!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <div id="modal">
+    <form>
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш телефон">
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'main/js/jquery.fancybox.min.js'%}"></script>
+  <script src="{% static 'main/js/slick.min.js'%}"></script>
+  <script src="{% static 'main/js/jquery.formstyler.min.js'%}"></script>
+  <script src="{% static 'main/js/main.js'%}"></script>
 
 {% endblock %}

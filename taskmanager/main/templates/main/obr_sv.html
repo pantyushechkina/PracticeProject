@@ -1,0 +1,70 @@
+{% extends  'main/base.html' %}
+{% load static %}
+{% block title %}
+Contacts
+{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="{% static 'main/css/news_style.css'%}">
+{% endblock %}
+
+{% block content %}
+<body>
+<section class="form" style="    padding-left: 100px;">
+    <div class="container">
+      <div class="form__inner">
+        <div class="form__content">
+          <div class="form__title-box">
+            <div class="form__title">
+              Обратная связь
+            </div>
+            <div class="form__text">
+                Возник вопрос - напишите! Мы с радостью ответим на все имеющиеся вопросы. При необходимости наши специалисты свяжутся с Вами.
+            </div>
+          </div>
+          <div class="form__box">
+            <form>
+              <div class="form__box-inner">
+                <div class="form__box-left">
+                  <label>
+                    E-mail
+                    <input type="text">
+                  </label>
+                  <label>
+                    Контактный телефон
+                    <input type="text">
+                  </label>
+                  <label>
+                    ФИО
+                    <input type="text">
+                  </label>
+                  <label>
+                    Тема вопроса
+                    <input type="text">
+                  </label>
+                </div>
+                <div class="form__box-right">
+                  <label>
+                    Сообщение
+                    <textarea></textarea>
+                  </label>
+                  <button class="default-btn" type="submit">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'main/js/catalog.js'%}"></script>
+  <script src="{% static 'main/js/slick.min.js'%}"></script>
+  <script src="{% static 'main/js/jquery.formstyler.min.js'%}"></script>
+  <script src="{% static 'main/js/main.js'%}"></script>
+</html>
+
+{% endblock %}

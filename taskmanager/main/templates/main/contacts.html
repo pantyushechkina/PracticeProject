@@ -1,21 +1,41 @@
 {% extends  'main/base.html' %}
 
+{% load static %}
+
 {% block title %}
 Contacts
 {% endblock %}
 
+{% block link%}
+<link rel="stylesheet" href="{% static 'main/css/contacts_style.css'%}">
+{% endblock %}
+
 {% block content %}
-    <h1>Contacts page</h1>
-    {% if contacts %}
-        {% for el in contacts %}
-            <div class="alert alert-warning mt-2">
-                <h3>{{ el.name }}</h3>
-                <p>{{ el.position }}</p>
-                <p>{{ el.phone }}</p>
-                <p>{{ el.email }}</p>
-            </div>
-        {% endfor %}
-    {% else %}
-        <p>don't have workers yet</p>
-    {% endif %}
+    <section class="services">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Должность</th>
+                    <th>Номер телефона</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% if contacts %}
+                {% for el in contacts %}
+                <tr>
+                    <td>{{ el.name }}</td>
+                    <td>{{ el.position }}</td>
+                    <td>{{ el.phone }}</td>
+                    <td>{{ el.email }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <p>don't have workers yet</p>
+            {% endif %}
+
+            </tbody>
+        </table>
+    </section>
 {% endblock %}

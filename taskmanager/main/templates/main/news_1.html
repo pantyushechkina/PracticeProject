@@ -1,0 +1,92 @@
+{% extends  'main/base.html' %}
+{% load static %}
+{% block title %}
+Contacts
+{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="{% static 'main/css/news_style.css'%}">
+{% endblock %}
+
+{% block content %}
+<body>
+    <section class="news">
+        <div class="container">
+
+            <div class="page_news">
+                <div class="news_item" id="page_news_item">
+                    <div class="page_news__slider" >
+                        <div class="news__slider-inner" id="page_slider">
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_foto_1.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_photo_2.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_photo_3.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_photo_4.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_photo_5.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="news__slider-item">
+                            <div class="news__slider-title">
+                                <div class="content_item_img">
+                                    <img src="{% static 'main/img/news_page/news_1_photo_6.jpg'%}" alt="" id="news_photo">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="content_item_info">
+                        <div class="news__blog-title">
+                            ДЕНЬ ПАМЯТИ И СКОРБИ
+                        </div>
+                        <div class="news__blog-text" id="page_news_text">
+                            22 июня – День памяти и скорби. Чтим память тех, кто защищал в суровые годы родное предприятие
+                            Этот день напоминает о всех погибших в Великой Отечественной войне, замученных в фашистской неволе, умерших в тылу от голода и лишений.
+                            Сотни рабочих бумажной фабрики сражались с врагом в действующей армии. В бою пали 324 человека. Рабочие фабрики, оставшиеся в Добруше, сформировали подпольные группы, первой из них создана электриком предприятия Н. Куликовым. Герои Советского Союза П. Романов и П. Бухонко навечно занесены в списки рабочих прославленной фабрики. Многие награждены высшими боевыми наградами.
+                            Мы скорбим по всем, кто ценой своей жизни выполнил святой долг, защищая в те суровые годы любимый город и родное предприятие.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+    </section>
+
+
+
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'main/js/catalog.js'%}"></script>
+  <script src="{% static 'main/js/slick.min.js'%}"></script>
+  <script src="{% static 'main/js/jquery.formstyler.min.js'%}"></script>
+  <script src="{% static 'main/js/main.js'%}"></script>
+</html>
+
+{% endblock %}

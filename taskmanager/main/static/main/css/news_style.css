@@ -1,0 +1,119 @@
+/* .side_news_section{
+    display: grid;
+}
+.side_news_section .news__blog{
+    display: grid;
+    grid-template-columns: 270px 300px ;
+
+}
+.info_new{
+    margin-left: 10px;
+}
+.news .news__inner{
+    display: flex;
+    justify-content: space-between;
+  } */
+.main_news{
+    padding-top: 80px;
+}
+.news_item{
+    background: white;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 300px 720px;
+    padding: 20px;
+    box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+}
+.news_photo{
+    width: 400px;
+    height: 300px;
+}
+.content_item_img img{
+width: 300px;
+}
+
+.content_item_info{
+    padding-left: 20px;
+}
+
+.content_item_info .news__blog-title{
+    border-bottom: solid #00a06a;
+}
+
+.content_item_info .news__blog-text{
+    padding-top: 10px;
+}
+
+.news_butn{
+    margin: 60px 0 0 550px;
+
+    width: 150px;
+    background: #00a06a;
+    padding: 10px 10px;
+    text-align: center;
+}
+.news_butn a{
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.date_news{
+    margin-left: 500px;
+}
+#news_photo{
+    width: 400px
+}
+#page_news_item{
+    grid-template-columns: 400px 620px;
+}
+#page_news_text{
+    font-size: 15px;
+}
+.page_news__slider{
+    /* max-width: 555px; */
+    /* width: 100%; */
+    background-color: #fff;
+    /* box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13); */
+    /* padding: 60px 35px 45px 70px; */
+    position: relative;
+}
+.page_news__slider:before{
+    content: "\f10e";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    left: 70px;
+    color: #fff;
+    font-size: 16px;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #00a06a;
+  }
+
+#page_slider .slick-btn{
+    top: auto;
+    bottom: 0;
+  }
+  #page_slider  .slick-next{
+    right: 30px;
+  }
+  #page_slider  .slick-prev{
+    right: 80px;
+    left: auto;
+  }
+  #page_slider  .slick-disabled{
+    border-color: #dadada;
+  }
+  #page_slider  .slick-disabled:before{
+     color: #dadada;
+  }
+  #history_page_item{
+    display: inline-block;
+  }
+  #history_page_item img{
+    width: 80%;
+    margin: 0 110px;
+  }
